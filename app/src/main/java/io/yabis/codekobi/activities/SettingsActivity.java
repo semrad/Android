@@ -9,14 +9,14 @@ import android.widget.LinearLayout;
 import io.yabis.codekobi.R;
 import io.yabis.codekobi.constants.PageConstants;
 
-public class MainActivity extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity {
 
-    private static final int PAGE_VALUE = PageConstants.MAIN_PAGE.getCode();
+    private static final int PAGE_VALUE = PageConstants.CONFIG_PAGE.getCode();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_settings);
         setClickables();
     }
 
@@ -27,19 +27,19 @@ public class MainActivity extends AppCompatActivity {
         btnMainPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(SettingsActivity.this,MainActivity.class));
             }
         });
         btnCodePage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,GetCodeActivity.class));
+                startActivity(new Intent(SettingsActivity.this,GetCodeActivity.class));
             }
         });
         btnSettingsPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,SettingsActivity.class));
+
             }
         });
 

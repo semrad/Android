@@ -3,28 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.yabis.codekobi.activities.MainActivity">
+    tools:context="io.yabis.codekobi.activities.SettingsActivity">
 
     <RelativeLayout
         android:id="@+id/header"
+        android:background="#f2f4f5"
         android:layout_width="match_parent"
         android:layout_alignParentTop="true"
         android:layout_height="30dp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <TextView
             android:layout_centerInParent="true"
-            android:src="@mipmap/ic_launcher" />
+            android:text="Settings"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 
-    <ListView
-        android:id="@+id/mainListView"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_above="@+id/menu"
-        android:layout_below="@+id/header"></ListView>
+
 
     <LinearLayout
         android:id="@+id/menu"
@@ -34,10 +31,10 @@
         android:orientation="horizontal"
         android:weightSum="3">
 
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/layout_menu"></include>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_menu"></include>
 
     </LinearLayout>
 
