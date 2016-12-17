@@ -1,7 +1,9 @@
-package io.yabis.codekobi;
+package io.yabis.codekobi.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import io.yabis.codekobi.R;
 
 public class LaunchActivity extends AppCompatActivity {
 
