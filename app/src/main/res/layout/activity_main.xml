@@ -9,7 +9,7 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_height="30dp">
+        android:layout_height="?android:attr/actionBarSize">
 
         <ImageView
             android:layout_width="wrap_content"

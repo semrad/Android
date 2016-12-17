@@ -24,7 +24,17 @@
             android:label="@string/title_activity_sign_up"
             android:theme="@style/AppTheme" />
         <activity android:name=".activities.GetCodeActivity" />
-        <activity android:name=".activities.UserSettingsActivity"></activity>
+        <activity android:name=".activities.UserSettingsActivity" />
+        <activity android:name=".activities.settings.ProfileActivity" />
+        <activity
+            android:name=".activities.settings.NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activities.settings.CardActivity" />
+        <activity android:name=".activities.settings.PaymentStatsActivity" />
+        <activity android:name=".activities.settings.SupportActivity" />
+        <activity android:name=".activities.settings.AboutActivity" />
+        <activity android:name=".activities.ValidateCodeActivity"></activity>
     </application>
 
 </manifest>

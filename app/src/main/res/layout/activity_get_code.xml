@@ -10,7 +10,7 @@
         android:background="#f2f4f5"
         android:layout_width="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_height="30dp">
+        android:layout_height="?android:attr/actionBarSize">
 
         <TextView
             android:layout_centerInParent="true"

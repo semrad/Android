@@ -18,6 +18,52 @@ public class UserSettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         setClickables();
+        menuClickables();
+    }
+
+    private void menuClickables(){
+        LinearLayout btnProfile = (LinearLayout)findViewById(R.id.btn_settings_profile_info);
+        LinearLayout btnPayment = (LinearLayout)findViewById(R.id.btn_settings_payment_info);
+        LinearLayout btnNotification = (LinearLayout)findViewById(R.id.btn_settings_notification_info);
+        LinearLayout btnCardSettings = (LinearLayout)findViewById(R.id.btn_settings_card_info);
+        LinearLayout btnHelp = (LinearLayout)findViewById(R.id.btn_settings_help_info);
+        LinearLayout btnAbout = (LinearLayout)findViewById(R.id.btn_settings_about_info);
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        btnPayment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        btnNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        btnCardSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        btnHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        btnAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     private void setClickables(){
