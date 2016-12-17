@@ -50,7 +50,7 @@ public class GetCodeActivity extends AppCompatActivity {
         btnSettingsPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(GetCodeActivity.this,SettingsActivity.class));
+                startActivity(new Intent(GetCodeActivity.this,UserSettingsActivity.class));
                 finish();
             }
         });
